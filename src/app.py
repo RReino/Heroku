@@ -13,8 +13,7 @@ mysql = MySQL(app)
 
 @app.route('/')
 def index():
-    print("Hello World!")
-    a = input("next page? y/n")
+    a = "y"
     if a == "y":
         return redirect(url_for('form'))
 
