@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from flask_mysqldb import MySQL
 
 app = Flask(__name__, template_folder='templates')
@@ -13,7 +13,10 @@ mysql = MySQL(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    print("Hello World!")
+    a = input("next page? y/n")
+    if a == "y":
+        return redirect(url_for('form'))
 
 
 @app.route('/form')

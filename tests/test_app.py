@@ -1,6 +1,5 @@
-from app import login
-from flask_mysqldb import MySQL
+from app import index
 
 
 def test_index():
-    assert login() == "Login via the login Form"
+    assert index() == "Hello World!"
