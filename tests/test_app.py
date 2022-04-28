@@ -1,5 +1,5 @@
-from app import index
+from app import login
 
 
 def test_index():
-    assert index() == "KLIKI SIIA!"
+    assert login() == "Login via the login Form"
