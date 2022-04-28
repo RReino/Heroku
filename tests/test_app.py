@@ -1,4 +1,5 @@
 from app import login
+from flask_mysqldb import MySQL
 
 
 def test_index():
