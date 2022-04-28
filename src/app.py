@@ -33,7 +33,7 @@ def login():
         cursor.execute(''' INSERT INTO info_table VALUES(%s,%s)''', (name, age))
         mysql.connection.commit()
         cursor.close()
-        return f"Done!!"
+        return f"LOL!"
 
 
 app.run(host='localhost', port=5000, debug=True)

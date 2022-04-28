@@ -1,5 +1,5 @@
-from app import hello
+from app import index
 
 
 def test_index():
-    assert hello() == "Hello, World!"
+    assert index() == "KLIKI SIIA!"
